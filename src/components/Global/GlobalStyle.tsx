@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import bgDesktop from "../assets/bg-intro-desktop.png";
+import bgDesktop from "../../assets/bg-intro-desktop.png";
+import bgMobile from "../../assets/bg-intro-mobile.png";
 
 export const GlobalStyle = createGlobalStyle`
 :root {
@@ -7,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     --black: #000;
     --pink: #FF7979;
     --green: #38CC8B;
+    --green-hover: #77e2b3;
     --violet: #5E54A4;
     --gray: #3D3B48;
     --input-border: #dedede;
@@ -14,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     --regular: 500;
     --semiBold: 600;
     --bold: 700;
+    --mobile-max: 870px;
 }
 
 * {
@@ -29,6 +32,10 @@ body {
     line-height: 26px;
     color: var(--white);
     background: var(--pink) url(${bgDesktop}) no-repeat;
+    @media (max-width: 870px) {
+        background: var(--pink) url(${bgMobile}) no-repeat center;
+        background-size: cover;
+  }
 }
 
 label {

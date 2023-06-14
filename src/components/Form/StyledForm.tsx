@@ -10,6 +10,11 @@ export const FormContainer = styled.form`
   background-color: var(--white);
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
   border-radius: 10px;
+  @media (max-width: 870px) {
+    gap: 16px;
+    width: 327px;
+    padding: 24px;
+  }
 `;
 export const InputContainer = styled.div`
   display: flex;
@@ -35,6 +40,10 @@ export const StyledInput = styled.input`
   :focus {
     border: 1px solid var(--violet);
     opacity: 1;
+  }
+  @media (max-width: 870px) {
+    width: 279px;
+    padding-left: 20px;
   }
 `;
 export const StyledErrorMessage = styled.p`
@@ -62,6 +71,12 @@ export const StyledButton = styled.button`
   line-height: 26px;
   letter-spacing: 1px;
   color: var(--white);
+  :hover {
+    background: var(--green-hover);
+  }
+  @media (max-width: 870px) {
+    width: 279px;
+  }
 `;
 export const StyledTermsInfo = styled.p`
   font-weight: var(--regular);
@@ -71,5 +86,8 @@ export const StyledTermsInfo = styled.p`
   color: var(--terms-color);
   span {
     color: var(--pink);
+  }
+  @media (max-width: 870px) {
+    line-height: 21px;
   }
 `;

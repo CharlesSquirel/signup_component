@@ -8,18 +8,37 @@ export const MainConainer = styled.main`
   width: 100vw;
   height: 100vh;
   padding: 121px 165px;
+  @media (max-width: 870px) {
+    flex-direction: column;
+    gap: 64px;
+    padding: 88px 24px;
+    height: auto;
+  }
 `;
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 11px;
   width: 525px;
+  @media (max-width: 870px) {
+    gap: 16px;
+    width: 327px;
+    p {
+      text-align: center;
+    }
+  }
 `;
 export const Title = styled.h1`
   font-weight: var(--bold);
   font-size: 50px;
   line-height: 55px;
   letter-spacing: -0.520833px;
+  @media (max-width: 870px) {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.291667px;
+    text-align: center;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -40,7 +59,15 @@ export const OfferWrapper = styled.div`
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.267857px;
+  @media (max-width: 870px) {
+    display: block;
+    width: 327px;
+    height: 88px;
+    align-self: center;
+    padding: 18px 66px;
+    text-align: center;
+  }
 `;
 export const OfferSpan = styled.span`
-font-weight: 700;
+  font-weight: 700;
 `;
