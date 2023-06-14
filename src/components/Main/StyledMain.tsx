@@ -13,6 +13,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 11px;
+  width: 525px;
 `;
 export const Title = styled.h1`
   font-weight: var(--bold);

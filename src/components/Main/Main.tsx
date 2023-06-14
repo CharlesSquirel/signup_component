@@ -1,5 +1,6 @@
 import React from 'react'
 import { FormContainer, MainConainer, OfferSpan, OfferWrapper, TextContainer, Title } from './StyledMain'
+import Form from '../Form/Form'
 
 const Main: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Main: React.FC = () => {
         </TextContainer>
         <FormContainer>
             <OfferWrapper><OfferSpan>Try it free 7 days</OfferSpan>then $20/mo. thereafter</OfferWrapper>
-            <form></form>
+            <Form></Form>
         </FormContainer>
     </MainConainer>
   )

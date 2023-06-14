@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     --green: #38CC8B;
     --violet: #5E54A4;
     --gray: #3D3B48;
+    --input-border: #dedede;
+    --terms-color: #BAB7D4;
     --regular: 500;
     --semiBold: 600;
     --bold: 700;
@@ -22,11 +24,30 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    font-weight: 500;
+    font-weight: var(--regular);
     font-size: 16px;
     line-height: 26px;
     color: var(--white);
     background: var(--pink) url(${bgDesktop}) no-repeat;
+}
+
+label {
+position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
 }
 
 `;
