@@ -23,7 +23,7 @@ const validationSchema = Yup.object({
   email: Yup.string().required("Required").email("Invalid email"),
   password: Yup.string()
     .required("Required")
-    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Password must contain at least one uppercase letter, one lowercase letter, and one digit"),
+    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Password must contain at least one uppercase letter, lowercase letter, and digit"),
 });
 
 const Form: React.FC = () => {
